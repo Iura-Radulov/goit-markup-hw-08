@@ -9,20 +9,24 @@
 }
 .clients-logo {
   display: flex;
+  flex-wrap: wrap;
   padding-bottom: 94px;
   &__item:not(:last-child) {
     margin-right: 40px;
   }
   &__link {
-    width: 170px;
-    height: 92px;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 210px;
+    height: 92px;
+
     border: 1px solid #afb1b8;
     color: #afb1b8;
     border-radius: 4px;
     transition: border 250ms $time-function, color 250ms $time-function;
+
+    // width: 170px;
   }
   &__link:hover,
   &__link:focus {

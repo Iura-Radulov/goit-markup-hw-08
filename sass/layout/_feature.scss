@@ -24,11 +24,13 @@
     height: 70px;
   }
   &__primary-text {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
     text-transform: uppercase;
-    margin-bottom: 10px;
   }
   &__secondary-text {
     color: $secondary-text-color;
