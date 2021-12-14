@@ -1,0 +1,135 @@
+.footer {
+  background-color: #2f303a;
+  &__text-contain {
+    display: flex;
+  }
+}
+.footer-nav {
+  &__logo {
+    display: inline-block;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    color: $primary-white-color;
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+  }
+  &__accent {
+    color: $accent-color;
+  }
+}
+
+.address-footer {
+  padding-left: 0;
+  padding-bottom: 60px;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  &__place {
+    color: $primary-white-color;
+  }
+  &__mail,
+  &__tel {
+    color: $secondary-text-color;
+  }
+}
+.join {
+  margin-left: 70px;
+  &__title {
+    margin-top: 72px;
+    margin-bottom: 20px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $primary-white-color;
+  }
+}
+
+.join-sociallinks {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+  padding-left: 32px;
+  padding-right: 32px;
+  width: 100%;
+  height: 45px;
+  padding: 0;
+  &__item:not(last-child) {
+    margin-right: 10px;
+  }
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: $primary-white-color;
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 50%;
+    transition: background-color 250ms $time-function;
+  }
+  &__link:hover,
+  &__link:focus {
+    background-color: $accent-color;
+  }
+  &__icon {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+  }
+}
+
+.signup {
+  margin-top: 72px;
+  margin-left: 93px;
+  margin-bottom: 94px;
+  &__flex {
+    display: flex;
+  }
+  &__text {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $primary-white-color;
+  }
+  &__input {
+    width: 358px;
+    height: 50px;
+    padding: 15px;
+    background-color: #2f303a;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    color: rgba(255, 255, 255, 0.6);
+    outline: none;
+  }
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 12px;
+    width: 200px;
+    height: 50px;
+    background-color: $accent-color;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    cursor: pointer;
+    color: $primary-white-color;
+  }
+  &__icon {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+  }
+}
