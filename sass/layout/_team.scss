@@ -2,17 +2,20 @@
   background-color: $fon;
 }
 .team-title {
-  padding-top: 94px;
-  padding-bottom: 50px;
+  padding-top: 66px;
+  padding-bottom: 33px;
   margin-bottom: 0;
-  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
+
+  // padding-top: 94px;
+  // padding-bottom: 50px;
+  // margin-bottom: 50px;
 }
 .team-block {
-  display: flex;
+  // display: flex;
   padding-left: 0;
   padding-bottom: 94px;
   &__item {

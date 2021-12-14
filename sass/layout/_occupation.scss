@@ -1,3 +1,6 @@
+.occupation {
+  display: none;
+}
 .occupation-title {
   margin-bottom: 50px;
   font-weight: 700;
@@ -6,9 +9,9 @@
   text-align: center;
 }
 .occupation-exemple {
-  display: flex;
-  padding-left: 0;
-  padding-bottom: 94px;
+  // display: flex;
+  // padding-left: 0;
+  // padding-bottom: 94px;
   &__item {
     position: relative;
   }
