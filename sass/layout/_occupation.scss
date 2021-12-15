@@ -1,5 +1,7 @@
 .occupation {
-  display: none;
+  @media screen and (max-width: $mobile) {
+    display: none;
+  }
 }
 .occupation-title {
   margin-bottom: 50px;

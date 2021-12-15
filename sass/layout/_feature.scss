@@ -1,8 +1,20 @@
 .feature {
   padding-left: 0;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
   &__item:not(:last-child) {
     @media screen and (max-width: $mobile) {
       margin-bottom: 36px;
+    }
+  }
+  &__item:first-child {
+    @media screen and (max-width: $mobile) {
+      margin-top: 60px;
     }
   }
   &__item:last-child {
@@ -10,7 +22,12 @@
       margin-bottom: 66px;
     }
   }
-
+  &__item {
+    @media screen and (min-width: $tablet) {
+      margin: 15px;
+      flex-basis: calc((100% - 2 * 30px) / 2);
+    }
+  }
   // &__item {
   // display: flex;
   // padding-top: 94px;
@@ -48,9 +65,9 @@
     font-size: 14px;
     line-height: 1.71;
   }
-  &__secondary-text:last-child {
-    @media screen and (max-width: $mobile) {
-      padding-bottom: 66px;
-    }
-  }
+  // &__secondary-text:last-child {
+  //   @media screen and (max-width: $mobile) {
+  //     padding-bottom: 66px;
+  //   }
+  // }
 }
