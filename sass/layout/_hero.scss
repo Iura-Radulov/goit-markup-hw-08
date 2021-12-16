@@ -21,10 +21,15 @@
   margin: 0 auto;
   padding-bottom: 30px;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 20px;
+  line-height: 1.6;
   text-align: center;
   text-transform: uppercase;
+  letter-spacing: 0.06em;
+  @media screen and (min-width: $desktop) {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 .hero-button {
   display: flex;

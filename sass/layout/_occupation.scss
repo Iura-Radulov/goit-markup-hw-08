@@ -1,5 +1,5 @@
 .occupation {
-  @media screen and (max-width: $mobile) {
+  @media screen and (max-width: 1199px) {
     display: none;
   }
 }
@@ -11,9 +11,12 @@
   text-align: center;
 }
 .occupation-exemple {
-  // display: flex;
-  // padding-left: 0;
-  // padding-bottom: 94px;
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    padding-left: 0;
+    padding-bottom: 94px;
+  }
+
   &__item {
     position: relative;
   }
