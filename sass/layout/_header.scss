@@ -9,7 +9,6 @@
     justify-content: space-between;
   }
 }
-
 .logo {
   margin-top: 24px;
   margin-bottom: 24px;
@@ -31,18 +30,21 @@
   border: none;
   border-color: transparent;
   cursor: pointer;
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
   &__icon {
     width: 40px;
     height: 40px;
   }
 }
-.menu .icon-close {
+.menu .js-close-menu {
   display: none;
 }
-.menu.is-open .icon-close {
+.menu.is-open .js-close-menu {
   display: block;
 }
-.menu.is-open .icon-menu {
+.menu.is-open .js-open-menu {
   display: none;
 }
 .icon-menu {
@@ -50,18 +52,18 @@
     display: none;
   }
 }
-.menu-contain {
+.mobile-menu {
   background-color: #fff;
   &.is-open {
     display: block;
   }
   @media screen and (max-width: 767px) {
     display: none;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 400px;
+    width: 100vw;
+    height: 100vh;
   }
 }
 
@@ -91,6 +93,7 @@
     }
   }
   &__link--current {
+    color: $accent-color;
     @media screen and (min-width: $tablet) {
       color: $accent-color;
       position: relative;
