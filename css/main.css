@@ -520,12 +520,19 @@ img {
   padding-top: 200px;
   padding-bottom: 200px;
   background-color: #2f303a;
+  background-size: cover;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/fon-mobile.jpg");
   text-align: center;
   max-width: 480px;
   height: 400px;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero-fon {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/fon-mobile@2x.jpg");
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -535,7 +542,7 @@ img {
   }
 }
 
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero-fon {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/fon-tablet@2x.jpg");
   }
@@ -549,15 +556,9 @@ img {
   }
 }
 
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero-fon {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/fon-desktop@2x.jpg");
-  }
-}
-
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .hero-fon {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/fon-mobile@2x.jpg");
   }
 }
 
@@ -1003,7 +1004,6 @@ img {
 .project__item {
   width: 100%;
   max-width: 450px;
-  margin-right: 30px;
   margin-bottom: 30px;
   border: 1px solid #eeeeee;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
